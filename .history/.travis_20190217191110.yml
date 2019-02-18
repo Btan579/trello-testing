@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: KwUhZG2DWkk62PofZOIP4tmPg4+hhryh/Seo3yghBUobWNoUToW5EXSuix3r1cj1ullgig+hvnan95VRivTYnnYApYLB22fCi9nYodC/90pKayo9XEVRQssM4yIip9asPqh/YAs43I+9z23WXzj/FZK23eND2aO/DDBbX7RCXFBdNAg47PdZ6iqoJ8ZMUpyBy3PDqmQEloQf8UFhc0PF6CCqu8X5ESXTuv/I1J2UM55eDQ99JXk+i8A18HT/6NF5lhaF8v0+nCi2O3oTGIvcrUJj794JR0bN3fUhXm2ZNwXz0eRUmPrefE922AzME4N3Xn6gPplABcbEEEszygl4npb3tujARwiH+qFscskP5PfUxka+HL4eWp41oKhxxSkQYffRuJo3u6XMyk/aTsRea1ChfLeq7nCp3ZE1NZv1Qs6vewBkzfZSfKOqBtcwCRkCWV4WKfXxwAGqBxXXOrd10XpW3Q7KVPpvdrmhhyVWuCVqBN8DSzV0lJHjeOu3/Ljil6w7mM9M7or9txDkWab8OPsE+vFljJcEO3YtINwEoedqErnhb8nV/UnjRM6Kbak9ODYxuznHDfcycBABbEvRrT/Pz6G1m3Jku1KbsVKbZ+EVqyIRBJ+io+w2IfVTneWCV2ipXMSE8Bfth1XirZSLL8eyEhwA9ueXoViYUPjgP5s=
+  app: trello-testing
+  on:
+    repo: Btan579/trello-testing
